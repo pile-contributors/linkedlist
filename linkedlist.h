@@ -1,7 +1,7 @@
 /**
  * @file linkedlist.h
  * @brief Declarations for LinkedList class
- * @author 
+ * @author
  * @copyright Copyright 2014 piles contributors. All rights reserved.
  * This file is released under the
  * [MIT License](http://opensource.org/licenses/mit-license.html)
@@ -50,6 +50,13 @@ public:
     //! destructor
     virtual
     ~LinkedList ();
+
+    //! assignment operator
+    LinkedList& operator=( const LinkedList& other) {
+        previous_ = other.previous_;
+        next_ = other.next_;
+        return *this;
+    }
 
     //! Finds out the number of elements that follow this one in the list.
     int
@@ -143,7 +150,7 @@ public:
     lLast (
             LinkedList * first_item);
 
-
+public: virtual void anchorVtable() const;
 }; // class LinkedList
 
 #endif // GUARD_LINKEDLIST_H_INCLUDE

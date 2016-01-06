@@ -1,7 +1,7 @@
 /**
  * @file linkedlist.cc
  * @brief Definitions for LinkedList class.
- * @author 
+ * @author
  * @copyright Copyright 2014 piles contributors. All rights reserved.
  * This file is released under the
  * [MIT License](http://opensource.org/licenses/mit-license.html)
@@ -288,7 +288,7 @@ LinkedList *LinkedList::lClear (LinkedList *first_item)
 /* ------------------------------------------------------------------------- */
 /**
  * @param first_item Pointer to header item for the list.
- * @param index the item to retreive
+ * @param index the item to retrieve
  * @return the requested item or NULL if out of bounds
  */
 LinkedList *LinkedList::lItem (LinkedList *first_item, int index)
@@ -347,3 +347,4 @@ LinkedList *LinkedList::lLast (LinkedList *first_item)
 }
 /* ========================================================================= */
 
+void LinkedList::anchorVtable () const {}
